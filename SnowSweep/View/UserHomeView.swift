@@ -541,9 +541,9 @@ struct UserHomeView: View {
     
     func fetchWeather() {
         isLoading = true
-        let apiKey = "e48b65afa58936e0648ffc2d59d3f517"
+        let apiKey = ""
         let city = "New York City"
-        let urlString = "https://api.openweathermap.org/data/2.5/weather?q=New%20York%20City&appid=e48b65afa58936e0648ffc2d59d3f517"
+        let urlString = "https://api.openweathermap.org/data/2.5/weather?q=New%20York%20City&appid=apiKey"
         
         guard let url = URL(string: urlString) else {
             print("Invalid URL")
